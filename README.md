@@ -1,16 +1,7 @@
-# Bypass Paywalls Clean for Chrome
+# Paywall clean bypass (chrome)
 
 Extension allows you to read articles from (supported) sites that implement a paywall.  
-You can also add domains as custom site and try to bypass the paywall.  
-Weekly updates are released for fixes and new sites.
 
-* [Installation](#installation)
-* [Update](#update)
-* [List of supported websites](#list-of-supported-websites)
-* [Sites with limited number of free articles](#sites-with-limited-number-of-free-articles)
-* [New site requests](#new-site-requests)
-* [Add custom site](#add-custom-site)
-* [Add excluded site](#add-excluded-site)
 * [Troubleshooting](#troubleshooting)
 * [Changelog-releases](#changelog-releases)
 * [License](#license)
@@ -18,58 +9,19 @@ Weekly updates are released for fixes and new sites.
 
 ### Installation
 Due to [Google internal policy](https://developer.chrome.com/webstore/program_policies), the extension is not available on the Chrome Web Store.  
-The following instructions are needed to install third-party extensions in [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser))-based desktop browsers.  
-In extension developer mode you can always install BPC by `Load unpacked` (latest master, but no automatic updates) or by crx-file (latest release & automatic updates, but possibly you have to add the extension to the allowlist).
-
-#### Load unpacked: Chrome, Microsoft Edge or Brave (all desktop)
-* or add extension to allowlist and install automatically updating crx-file (see next section)
-
-1. Download this repository as a [ZIP-file from GitLab](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/archive/master/bypass-paywalls-chrome-clean-master.zip).
-2. Unzip the file and you should have a folder named `bypass-paywalls-chrome-clean-master`.
-3. Move the folder to a permanent location on your computer (do not delete the folder after installation).
-4. Go to the extensions page (`chrome://extensions`).
-5. Enable Developer Mode.
-6. Click `Load unpacked` and select the extension folder.
+Can be installed through third-party ext in [Chromium](https://en.wikipedia.org/wiki/Chromium_(web_browser))-based desktop browsers.  
+In ext developer mode BPC installed by `Load unpacked` (latest master, but no automatic updates) or by crx-file (latest release & automatic updates, but possibly you have to add the extension to the allowlist).
 
 * By default BPC has limited permissions, but you can opt-in to enable custom sites (and also clear cookies/block general paywall-scripts for non-listed sites).
 * For custom sites you can also copy manifest.json from custom folder to the main extension folder (in Chrome optional permissions can get lost on reload unless you do a crx-installation first; no allowlist is needed).
 * In Chrome/Opera/Brave to disable the developer mode extensions popup use the extensions toolbar menu (by default enabled in Chrome 87+ or (if available) enable (experimental) chrome flag: chrome://flags/#extensions-toolbar-menu)
 
-If you're familiar with Git(Hub)-clients you can also clone this repo and update the extension that way (load unpacked folder used by Git(Hub)-client).
-
-#### CRX-file: other Chromium browsers (Opera/Vivaldi/Yandex)
-* or add extension to allowlist for Chrome, MS Edge or Brave (see [instructions](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/tree/master/allowlist/README.md))
-
-1. Download the extension as a crx-file from the [releases page](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean/-/releases).
-2. In your browser go to the extensions page.
-3. Enable Developer Mode.
-4. Drag your crx-file anywhere on the page to import it (when you have an active 'load unpacked' installation, first remove it (and backup your custom sites); for automatic update).
-
-* By default BPC has limited permissions, but you can opt-in to enable custom sites (and also clear cookies/block general paywall-scripts for non-listed sites).
-
-#### Android
-1. Install [Kiwi Browser](https://play.google.com/store/apps/details?id=com.kiwibrowser.browser&hl=nl) or [Yandex Browser](https://play.google.com/store/apps/details?id=com.yandex.browser&hl=en) from the Google PlayStore.
-2. For Kiwi Browser you have two options:
-* load the CRX-file in releases (auto-updating, no allowlist needed, opt-in for custom sites not working (use kiwi-custom crx; updates to latest regular version)
-* install latest master zip-file (no automatic updates, for custom sites use manifest.json from custom folder).
-3. For Yandex Browser follow Chrome instructions above (load unpacked; step 6: pick  manifest.json instead of the folder). If it fails try a few times or use Total Commander (as file manager). You can use a Git client like MGit to clone (and update) this repository on your mobile device.\
-For custom sites copy manifest.json from custom folder to the main extension folder (optional permissions are lost on reload).
-
-#### Firefox
-Visit the [Firefox repository](https://gitlab.com/magnolia1234/bypass-paywalls-firefox-clean) of Bypass Paywall Clean.
-
 #### Notes
-* This extension works best alongside the adblocker [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en).
+* This extension works best alongside my adblocker.
 * On Yandex Android use [uBlock Origin development build](https://chrome.google.com/webstore/detail/ublock-origin-dev-build/cgbcahbpdhpcegmbfconppldiemgcoii).
 * Do not delete extension's folder from your computer/smartphone or Bypass Paywalls Clean (in developer mode) will disappear at restart.
 * In Chrome/Opera/Brave to disable the developer mode extensions popup use the extensions toolbar menu (by default enabled in Chrome 87+ or (if available) enable (experimental) chrome flag: chrome://flags/#extensions-toolbar-menu)
 * You will be logged out for most of the sites you have checked.
-
-### Update
-For crx-installation: check for updates (in chrome://extensions).\
-For zip-installation (load unpacked/developer mode): unzip files to installation folder or use a Git(Hub)-client to clone the extension (locally).\
-You can also check for update of site rules at startup (opt-in).\
-For new sites you also have to opt-in to custom sites/request permissions for new domains (or wait for new release).
 
 ### List of supported websites
 
